@@ -1,0 +1,98 @@
+/**
+ * Styling for buttons
+ */
+
+/* Default button style */
+.rpgui-button {
+    /* Remove default styles */
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    outline: none;
+  
+    /* Background */
+    background: url("../rpg/button.png") center/100% no-repeat;
+  
+    /* Font size */
+    font-size: 1em;
+  
+    /* Default size and display */
+    max-width: 100%;
+    min-width: 140px;
+    height: 60px;
+    display: inline-block;
+  
+    /* Padding */
+    padding: 0 35px;
+  }
+  
+  /* Button hover */
+  .rpgui-button:hover {
+    background-image: url("../rpg/button-hover.png");
+  }
+  
+  /* Button clicked */
+  .rpgui-button:active {
+    background-image: url("../rpg/button-down.png");
+  }
+  
+  /* Golden button */
+  .rpgui-button.golden {
+    /* Background */
+    background: url("../rpg/button-golden.png") center/100% 80% no-repeat;
+  
+    /* Size and display */
+    max-width: 100%;
+    min-width: 140px;
+    height: 60px;
+    display: inline-block;
+  
+    /* Padding */
+    padding: 5px 35px;
+  }
+  
+  /* Golden button hover */
+  .rpgui-button.golden:hover {
+    background-image: url("../rpg/button-golden-hover.png");
+  }
+  
+  /* Golden button clicked */
+  .rpgui-button.golden:active {
+    background-image: url("../rpg/button-golden-down.png");
+  }
+  
+  /* Golden button decorations */
+  .rpgui-button.golden:before,
+  .rpgui-button.golden:after {
+    content: "";
+    width: 34px;
+    height: 110%;
+    display: block;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: -5%;
+  }
+  
+  .rpgui-button.golden:before {
+    background: url("../rpg/button-golden-left.png") no-repeat right center;
+    float: left;
+    margin-left: -46px;
+  }
+  
+  .rpgui-button.golden:after {
+    background: url("../rpg/button-golden-right.png") no-repeat left center;
+    float: right;
+    margin-right: -46px;
+  }
+  
+  /* Optional hover styles for golden button decorations (if needed) */
+  /*
+  .rpgui-button.golden:hover:before {
+    background-image: url("../assets/rpg/button-golden-left-hover.png");
+  }
+  
+  .rpgui-button.golden:hover:after {
+    background-image: url("../assets/rpg/button-golden-right-hover.png");
+  }
+  */
+  
